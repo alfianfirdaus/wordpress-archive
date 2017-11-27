@@ -1,0 +1,130 @@
+#pro-banner {
+  margin-top: 100px;
+  height: 640px;
+
+  .banner {
+    padding: 0;
+
+    img {
+      object-position: center bottom;
+      object-fit: cover;
+      height: 640px;
+      width: 100%;
+    }
+
+    h1 {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: 0;
+    }
+
+    .note {
+      background: rgba(255, 255, 255, 0.9);
+      position: absolute;
+      line-height: 27px;
+      padding: 60px;
+      width: 440px;
+      right: 200px;
+      top: 200px;
+    }
+  }
+}
+
+#automotive {
+  .title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    float: none;
+    width: 820px;
+  }
+
+  .category {
+    margin: 0 auto;
+    width: 820px;
+    float: none;
+
+    .full-centered {
+      width: calc(100%/2 - 20px);
+      margin: 10px;
+      height: 120px;
+
+      img {
+        object-position: center center;
+        object-fit: cover;
+        height: 120px;
+        width: 400px;
+      }
+    }
+  }
+}
+
+#industrial {
+  background: #F8F7F7;
+  align-items: center;
+  display: flex;
+  height: 420px;
+
+  .title {
+    text-align: center;
+    margin: 0 auto;
+    width: 820px;
+    float: none;
+  }
+
+  .subcat {
+    justify-content: center;
+    display: flex;
+
+    .full-centered {
+      width: calc(100%/2 - 20px);
+      margin: 10px;
+      height: 120px;
+
+      img {
+        object-position: center center;
+        object-fit: cover;
+        height: 120px;
+        width: 300px;
+      }
+
+      a {
+        text-align: center;
+        width: 200px;
+      }
+    }
+  }
+}
+
+#protector {
+  background: #eaeaea;
+  align-items: center;
+
+  .title {
+    text-align: center;
+    margin: 0 auto;
+    width: 820px;
+    float: none;
+  }
+
+  .subcat {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    height: 120px;
+    float: none;
+
+    img {
+      object-position: center center;
+      object-fit: cover;
+      height: 120px;
+      width: 100%;
+    }
+
+    a {
+      text-align: center;
+      width: 240px;
+    }
+  }
+}

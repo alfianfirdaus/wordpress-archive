@@ -1,0 +1,138 @@
+#contact {
+  background-image: url('http://dev.kesato.com/nano-ceramic/wp-content/themes/nano-ceramic/assets/images/home/home-banner.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  .outer {
+
+    img {
+      height: 100%;
+    }
+
+    .content {
+      padding-bottom: 50px;
+      padding-top: 150px;
+      padding-right: 0;
+      padding-left: 0;
+
+      .title {
+        margin-bottom: 40px;
+
+        h1 {
+          margin-bottom: 50px;
+          text-align: center;
+          color: #fff;
+
+          &:after {
+            border-bottom: 3px solid #fff;
+            display: block;
+            margin: 0 auto;
+            content: '';
+            width: 50px;
+          }
+        }
+      }
+
+      .map {
+        padding-right: 50px;
+
+        p {
+          color: #fff;
+
+          a {
+            color: #fff;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+
+        iframe {
+          height: 414px;
+        }
+      }
+
+      .form {
+        .wpcf7-form-control-wrap {
+          width: 100%;
+        }
+
+        div.wpcf7-mail-sent-ok {
+          background: #CC484B;
+          padding: 10px 20px;
+          border: #CC484B;
+          color: #fff;
+        }
+
+        ::-webkit-input-placeholder { /* WebKit browsers */
+        color: #fff !important;
+        opacity: 0.8;
+        }
+
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff !important;
+        opacity: 0.8;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff !important;
+        opacity: 0.8;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #fff !important;
+        opacity: 0.8;
+        }
+
+        br {
+          display: none;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="number"],
+        input[type="email"],
+        input[type="submit"],
+        textarea {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 0;
+          font-size: 14px;
+          padding: 8px;
+          color: #fff;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="url"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="submit"]:focus,
+        textarea:focus {
+          border: 1px solid #eaeaea;
+          color: #fff;
+        }
+
+        label {
+          margin-bottom: 21px;
+          font-weight: 100;
+          color: #fff;
+        }
+
+        input[type="submit"] {
+          padding: 15px 40px;
+          font-weight: 100;
+          background: #fff;
+          font-size: 16px;
+          color: $dark;
+          border: 1px solid #fff;
+        }
+
+        input[type="submit"]:hover {
+          @include transition(all .5s ease);
+          background: rgba(255, 255, 255, 0.1);
+          color: #fff;
+        }
+      }
+    }
+  }
+}

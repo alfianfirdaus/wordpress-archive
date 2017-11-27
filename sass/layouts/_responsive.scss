@@ -1,0 +1,567 @@
+// Large Screen (=>1200)
+@media screen and (min-width: 1200px) {
+  footer {
+    .inner {
+      margin: 0 auto;
+      display: flex;
+      width: 1170px;
+    }
+  }
+}
+
+// Medium Screen (992 - 1199)
+@media screen and (max-width: 1199px) {
+  footer {
+    .inner {
+      padding: 50px 30px;
+    }
+  }
+}
+
+// Small Screen (768 - 991)
+@media screen and (max-width: 991px) {
+  // General Start
+  h1 {
+    font-size: 30px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  h3 {
+    font-size: 26px !important;
+  }
+  // General Stop
+
+  #header {
+
+    .top-menu {
+      @include transition(all .5s ease);
+      position: fixed;
+      height: 20px;
+      width: 100%;
+      opacity: 0;
+      padding: 0;
+
+      &.show {
+        li.menu-item-has-children {
+          .sub-menu {
+            top: 0 !important;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    .mobile-trigger,
+    .change {
+      position: absolute;
+      display: grid;
+      z-index: 999;
+      right: 34px;
+      top: 34px;
+    }
+
+    .mobile-trigger {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .bar:nth-child(1),
+    .bar:nth-child(2),
+    .bar:nth-child(3) {
+      background-color: #ffffff;
+      transition: 0.4s;
+      display: flex;
+      margin: 5px 0;
+      width: 25px;
+      height: 2px;
+    }
+
+    .change .bar:nth-child(1) {
+      -webkit-transform: rotate(-45deg) translate(-5px, 5px) ;
+      transform: rotate(-45deg) translate(-5px, 5px) ;
+    }
+
+    .change .bar:nth-child(2) {opacity: 0;}
+
+    .change .bar:nth-child(3) {
+        -webkit-transform: rotate(45deg) translate(-5px, -5px) ;
+        transform: rotate(45deg) translate(-5px, -5px) ;
+    }
+
+    .show {
+      margin-top: 100px;
+    }
+
+  }
+
+  #hm-banner {
+    .banner {
+      video {
+        display: none;
+      }
+
+      .middle-text {
+        left: calc(50% - 350px);
+        width: 700px;
+      }
+
+      .bottom-text {
+        .space, #btnReplay {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // homepage
+  #hm-first {
+    .warranty, .service, .points {
+      height: 250px;
+    }
+  }
+
+  #hm-second {
+    .gloss {
+      .gloss-1, .gloss-2 {
+        height: 400px;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+    }
+
+    .after-gloss {
+      .youtube {
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  #hm-third {
+    .video, .text {
+      padding: 0 15px;
+    }
+  }
+
+  // page product
+  #automotive {
+    .title, .category {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  #industrial {
+    height: auto;
+
+    .title {
+      width: 100%;
+    }
+
+    .subcat {
+      display: block;
+
+
+      .full-centered {
+        padding: 0 10px;
+        margin-bottom: 30px;
+
+        a {
+          width: 190px;
+        }
+      }
+    }
+  }
+
+  #protector {
+    .title {
+      width: 100%;
+    }
+
+    .subcat {
+      width: 400px;
+    }
+  }
+
+  // page product list
+  #cat_banner {
+    height: 30vh;
+
+    .banner {
+      height: 30vh;
+    }
+  }
+
+  #products_list {
+    .list-products {
+      margin-bottom: 30px;
+    }
+  }
+
+  #single-product {
+    .left-side {
+      .featured-img {
+        img {
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  // page contact
+  #contact {
+    background-image: url('assets/images/home/home-banner.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    display: block;
+
+    .outer {
+      display: block;
+      height: auto;
+
+      img {
+        display: none;
+      }
+
+      .content {
+        padding-bottom: 30px;
+        padding-top: 150px;
+        position: relative;
+
+        .container {
+          width: 100%;
+          margin: 0;
+        }
+
+        .map {
+          margin-bottom: 60px;
+          padding-right: 15px;
+
+          a {
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .inner {
+      .action-button {
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+// Extra Small Screen
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 26px !important;
+  }
+
+  h3 {
+    font-size: 24px !important;
+  }
+
+  #header {
+    .top-logo {
+      svg {
+        width: 220px;
+      }
+    }
+
+    .show {
+      margin-top: 0;
+
+      ul.menu {
+        li {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  // Homepage
+  #hm-banner {
+    .banner {
+      .middle-text {
+        top: calc(50vh - 50px);
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  #hm-first {
+    .warranty, .service, .points {
+      margin-bottom: 5px;
+      min-height: 250px;
+      height: auto;
+      padding: 0;
+    }
+  }
+
+  #hm-second {
+    .gloss {
+      .gloss-1 {
+        margin-bottom: 5px;
+      }
+    }
+
+    .after-gloss {
+      .vision, .sibc, .youtube {
+        margin-bottom: 30px;
+      }
+
+      .youtube {
+        margin-top: 0;
+      }
+    }
+  }
+
+  #hm-third {
+    .video {
+      margin-bottom: 30px;
+    }
+  }
+
+  #hm-fourth {
+    .point, .box, .support {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  #fifth {
+    margin-bottom: 5px;
+    height: 300px;
+
+    img {
+      object-position: center bottom;
+      object-fit: cover;
+      max-height: 100%;
+      height: 300px;
+      opacity: 0.3;
+    }
+  }
+
+
+  // page about
+  #about {
+    .inner {
+      padding: 60px 15px;
+
+      .video {
+        margin-bottom: 30px;
+      }
+
+      .text {
+        padding: 0;
+
+        p:nth-last-child(1) a:nth-child(2) {
+          float: right;
+        }
+      }
+    }
+  }
+
+  #ab-second {
+    .col-xs-12 {
+      margin-bottom: 50px;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #ab-third {
+    .inner {
+      .satu {
+        margin-bottom: 30px;
+        padding: 0;
+
+        .text {
+          padding-right: 15px;
+          padding-left: 15px;
+
+          p:nth-last-child(1) {
+            a:nth-last-child(1) {
+              float: right;
+            }
+          }
+        }
+
+        .image {
+          padding: 0 15px;
+
+          img {
+            height: 250px;
+          }
+        }
+      }
+
+      .dua {
+        margin-bottom: 30px;
+        padding: 0;
+
+        .image-2 {
+          margin-bottom: 30px;
+          padding: 0 15px;
+
+          img {
+            height: 250px;
+          }
+        }
+
+        .text-2 {
+          padding: 0 15px;
+        }
+      }
+
+      .tiga {
+        padding: 0;
+
+        .text-3 {
+          padding-right: 15px;
+        }
+
+        .image-3 {
+          padding: 0 15px;
+
+          img {
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+
+  // Page Products category
+  #pro-banner {
+    height: 100vh;
+
+    .banner {
+      .note {
+        width: 90%;
+        right: 5%;
+      }
+    }
+  }
+
+  #automotive {
+    .category {
+      .full-centered {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 30px 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #industrial {
+    .subcat {
+      .full-centered {
+        padding: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 30px 0;
+
+        img {
+          width: 100%;
+        }
+
+        a {
+          width: 240px;
+        }
+      }
+    }
+  }
+
+  #protector {
+    .subcat {
+      width: calc(100% - 20px);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // page single-product
+  #single-product {
+    .left-side {
+      .featured-img {
+        img {
+          height: 200px;
+        }
+      }
+
+      .video {
+        iframe {
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  // page contact
+  #contact {
+    .outer {
+      .content {
+        .map {
+          iframe {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .inner {
+      padding: 50px 15px;
+
+      .col-xs-12 {
+        margin-bottom: 30px;
+      }
+
+      .action-button {
+        margin-top: 0;
+
+        a {
+          width: 100%;
+        }
+      }
+
+      .title {
+        &:after {
+          border-bottom: 2px solid;
+          margin-top: 10px;
+          display: block;
+          content: '';
+          width: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+footer {
+  border-top: 1px solid #eaeaea;
+
+  .logo {
+    border-bottom: 1px solid #eaeaea;
+    height: 100px;
+
+    svg {
+      // position: absolute;
+      width: 312px;
+
+      #Group_886 {
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+
+  .inner {
+    padding: 50px 0;
+
+    .title {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 0;
+      li {
+        list-style-type: none;
+        margin-bottom: 10px;
+
+        a {
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    padding: 0 30px 30px;
+    text-align: center;
+    color: #B2B2B2;
+
+    a {
+      color: #B2B2B2;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

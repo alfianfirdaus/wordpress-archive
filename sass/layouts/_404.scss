@@ -1,0 +1,38 @@
+#lost {
+  background-image: url('assets/images/home/home-banner.jpg');
+  background-position: center center;
+  @include justify-content(center);
+  @include align-items(center);
+  @include display-flex();
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+
+  h1, h2 {
+    color: #fff;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+}

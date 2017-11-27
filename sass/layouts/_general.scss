@@ -1,0 +1,180 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+// Color
+$dark : #333333;
+$red  : #CC484B;
+$grey : #F7F7F7;
+
+.container-fluid {
+  position: relative;
+  padding: 0;
+}
+
+.row {
+  position: relative;
+  margin: 0;
+}
+
+.inner {
+  display: inline-block;
+  padding: 60px 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  line-height: 25px;
+}
+
+span {
+  display: inline-block;
+}
+
+
+// Bottons
+.button {
+  @include transition(all .5s ease);
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+
+  &:hover {
+    @include transition(all .5s ease);
+    text-decoration: none;
+  }
+}
+
+.button-white {
+  border: 1px solid #fff;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: $dark;
+  }
+}
+
+.button-white-filled {
+  background: #fff;
+  border: 1px solid #fff;
+  color: $dark;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.button-dark{
+  border: 1px solid $dark;
+  color: $dark;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.button-black{
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.button-large {
+  text-align: center;
+  width: 240px;
+}
+
+.centered {
+  @include justify-content(center);
+  @include align-items(center);
+  @include display-flex();
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.full-centered {
+  @include justify-content(center);
+  @include align-items(center);
+  @include display-flex();
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.overlay-dark {
+  background-color: rgba(25, 25, 25, 0.9);
+}
+
+.red-text {
+  color: $red;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+// Metabox styles
+.cmb_metabox {
+  .cmb-row {
+    margin-bottom: 30px !important;
+  }
+}
+
+#header {
+  .top-menu {
+    ul.menu {
+      li:nth-child(4) {
+        a {
+          pointer-events: none;
+          cursor: default;
+          color: #676767;
+        }
+      }
+    }
+  }
+}
