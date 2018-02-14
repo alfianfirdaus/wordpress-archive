@@ -50,4 +50,13 @@
     return apply_filters( 'taxonomy-images-list-the-terms', '', array('post_id' => $post->ID, 'taxonomy' => 'providers') );
   }
 
+
+// remove editor galerie post type
+add_action('init', 'init_remove_support',100);
+function init_remove_support(){
+    $post_type = 'galerie';
+    remove_post_type_support( $post_type, 'editor');
+}
+  
+
 ?>

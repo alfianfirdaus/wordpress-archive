@@ -29,8 +29,7 @@
     // Sticky Post Nav
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
-
-      console.log(scroll);
+      
       if(scroll >= 240){
         $('.main-nav-post').removeClass('active');
 
@@ -96,6 +95,17 @@
 
       document.oncontextmenu = new Function("return false")        
 
+
+// Masonry Bug
+$('#testimonialButton').on('shown.bs.tab', function (e) {
+     $(window).trigger("resize");
+ });
+
+ $(window).resize(function(){
+   $('.grid').masonry({
+     itemSelector: '.grid-item',
+   });            
+ });
 
   });
 }(jQuery));
