@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kratom Island</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script type='text/javascript' src='http://magnitude.kesato/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<style>
+	
+	.main{
+		width: 100%;
+		background: red;
+		float: left;
+		transiton: all 1s ease;
+	}
+	.menu{
+		width: 300px;
+		    position: absolute;
+    border: 1px solid;
+    right: -300px;
+    transiton: all 1s ease;
+	}
+
+</style>
+<script>
+	var $ = jQuery;
+	jQuery(document).ready(function(){
+		jQuery('#menubutton').on('click', function(){
+
+			$('.main').css('position','relative');
+			$('.main').css('left','-300px');
+			$('.menu').css('right','0');
+		});
+	});
+</script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="main">
+		<h1>cooming<br>soon</h1>
+		<a href="#" id="menubutton">button</a>
+	</div>
+	<div class="menu">
+		<ul>
+			<li>asdasd</li>
+			<li>asdasd</li>
+			<li>asdasd</li>
+			<li>asdasd</li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
