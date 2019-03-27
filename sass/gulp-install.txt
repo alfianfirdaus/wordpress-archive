@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
- Install gulp -> npm install gulp
-=======
 Install gulp -> npm install gulp
 >>>>>>> Stashed changes
 Install Public -> npm install --save gulp-install
